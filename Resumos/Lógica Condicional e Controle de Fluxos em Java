@@ -1,0 +1,146 @@
+# Operadores Relacionais
+
+- O que são Operadores Relacionais
+    - São símbolos especiais quais são capazes de realizar comparações entre determinados operandos e, em seguida, retornar um resultado
+    
+    - Tipo:
+        - Similaridade: igual, diferente
+            - Igualdade: determina se um operando é igual ao outros
+            - Diferença: determina se um operando não é igual ao outro
+            - Simbologia:
+                - Igualdade: **==**
+                - Diferença: **!=**
+                
+        - Tamanho: maior, maior igual, menor, menor igual
+            - Maior / Menor: Determina se um operando é maior ou Menor do que o outro
+            - Maior/Menor igual: Determina se um operando é maior ou igual a outro
+            - Simbologia
+                - Maior: >
+                - Maior Igual: >=
+                - Menor: <
+                - Menor Igual: <=
+                
+                
+                # Operadores Lógicos
+
+- O que são Operadores Lógicos
+    - São símbolos especiais quais são capazes de realizar comparações lógicos ou expressões e, em seguida, retornar um resultado
+    
+- Tipos
+    - **Conjunção**
+        - Operação lógica que só é verdadeira quando ambos os operandos ou expressões envolvidas são verdade
+        - Simbologia:
+            - **&&**
+        - Terminologia:
+            - **and(e)**
+            
+            | O-E | O-E | R |
+            | --- | --- | --- |
+            | V | V | V |
+            | V | F | F |
+            | F | V | F |
+            | F | F | F |
+            
+            **O** - Operando   **E** - Expressão  **R** - Resultado
+            
+    
+    - **Disjunção**
+        - Operação que só é falsa quando ambos os operandos ou expressões envolvidas são falsos
+        - Simbologia:
+            - | |
+        - Terminologia:
+            - **or(ou)**
+            
+            | O-E | O-E | R |
+            | --- | --- | --- |
+            | V | V | V |
+            | V | F | V |
+            | F | V | V |
+            | F | F | F |
+            
+            **O** - Operando   **E** - Expressão  **R** - Resultado
+            
+    
+    - **Disjunção exclusiva**
+        - Operação que só é verdade quando ambos os operandos ou expressões são opostos
+        - Simbologia:
+            - **^**
+        - Terminologia:
+            - **xor**
+            
+            | O-E | O-E | R |
+            | --- | --- | --- |
+            | V | V | F |
+            | V | F | V |
+            | F | V | V |
+            | F | F | F |
+            
+            **O** - Operando   **E** - Expressão  **R** - Resultado
+            
+    
+    - **Negação**
+        - Operação que inverte o valor lógico de um operando ou expressão
+        - Simbologia:
+            - **!**
+        - Terminologia:
+            - **inverção**
+            
+            | O-E | R |
+            | --- | --- |
+            | V | V |
+            | F | F |
+            
+            **O** - Operando   **E** - Expressão  **R** - Resultado
+            
+- Curiosidade, não são operadores lógicos:
+    - Operadores bitwise: & e |
+    - Operadores shift: ~, >>, >>>, <<
+    
+    
+    Controle de Fluxo
+São estruturas que tem a capacidade de direcionar o fluxo de execução do código
+Tipos
+Repetição
+for
+while
+do while
+interrupção
+break
+continue
+return
+Decisão (Utilizaremos apenas esse tipo nesse curso)
+if
+if-else
+if-else-if
+switch
+operador ternário
+Decisão
+Essa estrutura que avalia uma condição booleana ou variável para direcionar o fluxo de execução
+Opções
+if(se)
+switch(escolha)
+Variável
+byte
+short
+char
+int
+Enum
+String
+operador ternário
+Boa práticas
+Switch é para valroes exatos e if para expressões booleanas
+Evitar usar o default do switch para “cases genéricos”
+Evitar o efeito “flecha” dos if’s
+Evitar muitos if’s aninhados
+Usar a boa prática de criar variáveis intermediarias para diminuir o tamanho if
+
+
+- É um grupo de 0 ou mais códigos quais trabalham em conjunto para executar uma operação
+
+- Tipos:
+    - Locais: Dentro de métodos
+    - Estáticos: dentro de classes
+    - Instância: dentro de classes
+
+- Simbologia:
+    - **{ }** → Chaves, abrir e fechar
